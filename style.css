@@ -1,0 +1,86 @@
+/* default styles */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mobile Responsibveness */
+@media screen  and (min-width:120px) and (max-width:549px){
+
+.contact-segement span:nth-child(1){
+display: flex;
+margin-left: 20px;
+gap:5px ; 
+justify-content: center;}
+.contact-segement span:nth-child(2){
+    text-align: center;
+}
+.contact-segement span .grey{
+    color: grey;
+    font-weight: 600;
+}
+
+form , form span{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+form input ,textarea{
+    padding: 10px;
+    border-radius: 5px;
+    resize: vertical;
+   
+}
+
+form button{
+    width: fit-content;
+    padding: 5px 20px;
+    background-color: #495;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+}
+
+/* TABLET RESPONSIVENESS */
+@media screen and (min-width: 550px) {
+
+    .contact-segement span:nth-child(1){
+        display: flex;
+        gap: 5px;font-size: large;
+        margin-left: 40px;
+    }
+    .contact-segement span:nth-child(2){
+display: flex;
+flex-direction: column;
+line-height: 10px;
+align-items: center;
+}
+.contact-segement span:nth-child(2) .grey{
+    color: grey;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+form  input,textarea{
+    padding: 15px;
+    resize: vertical;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid grey;
+}
+form button{
+width: fit-content;
+padding: 10px 30px;
+background-color: #25a73f;
+color: #fff;
+border-radius: 4px;
+margin: 0 auto;
+}
+
+ }
